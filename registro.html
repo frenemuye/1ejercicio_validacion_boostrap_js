@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <!-- activar libreria bootstreap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fin activar libreria bootstreap -->
+  <!-- libreria de los iconos asombrosos de fontawesome.com/ siempre va debajo de la libreria de booststrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- fin libreria de los iconos asombrosos de fontawesome.com/ -->
+  <!-- libreria de los css + js -->
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <script type="text/javascript" src="js/validar.js"></script>
+  <!-- fin libreria de los css + google fonts/ -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Germania+One|Indie+Flower|Monoton|Roboto&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- barra -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sedes </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comunidad</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Estudiantes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Notas</a>
+            <a class="dropdown-item" href="#">Bibliotecas</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="registro.html">Registro</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Convocatorias</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <!-- barra -->
+
+
+
+
+  <main>
+    <br><br><br><br><br>
+    <div class="container">
+      <h2>
+        <p>Ya tienes credenciales? ingresa aqui</p>
+      </h2>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Direccion de Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="validar1();">Entrar</button>
+      </form>
+    </div>
+
+
+    <br><br>
+    <div class="container">
+      <hr align="center">
+    </div>
+    <br><br>
+    <div class="container">
+      <h2>
+        <p>Si no tienes credenciales para ingresar registrate aqui</p>
+      </h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Direccion casa</label>
+          <input type="text" class="form-control" id="inputAddress"
+            placeholder="cra 12a calle 12a - numero - interior ">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Direccion trabajo</label>
+          <input type="text" class="form-control" id="inputAddress2"
+            placeholder="Campo opcional - cra 12a calle 12a - numero - interior ">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Departamento</label>
+            <select id="inputState" class="form-control">
+              <option selected>Escoger...</option>
+              <option>Antioquia</option>
+              <option>Cundinamarca</option>
+              <option>Guajira</option>
+              <option>Risaralda</option>
+              <option>Quindio</option>
+
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="validar2();">Registrarme</button>
+    </div>
+    </form>
+    <br><br><br>
+  </main>
+
+  <footer>
+    <center>
+      <h3><a href="index.html" class="revisar">&nbsp;&nbsp;<i class="fas fa-chevron-circle-left"></i>&nbsp; Atras
+          &nbsp;&nbsp;</a></h3>
+    </center>
+  </footer>
+  <br><br><br><br><br>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
